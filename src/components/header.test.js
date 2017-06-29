@@ -19,5 +19,4 @@ describe('<Header />', () => {
         const wrapper = shallow(<Header showInfoModal={true}/>);
         expect(wrapper.find(InfoModal).exists()).toEqual(true);
     });
-
 });
