@@ -12,6 +12,8 @@ describe("newGame", () => {
     const action = newGame();
     expect(action.type).toEqual(NEW_GAME);
     expect(typeof action.correctAnswer).toBe("number");
+    expect(action.correctAnswer).toBeGreaterThanOrEqual(0);
+    expect(action.correctAnswer).toBeLessThanOrEqual(100);
   });
 });
 
